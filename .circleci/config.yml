@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/elixir:1.4.2
+
+    working_directory: ~/taco
+
+    steps:
+      - checkout
+      - run: mix local.hex --force
+      - run: mix local.rebar --force
+      - run:
+          name: Install dependencies
+          command: mix deps.get
+      - run:
+          name: Run tests
+          command: mix test

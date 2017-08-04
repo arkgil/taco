@@ -7,7 +7,8 @@ defmodule Taco.Mixfile do
       version: "0.1.0",
       name: "Taco",
       description: "Composition and error handling of sequential computations",
-      elixir: "~> 1.5",
+      elixir: "~> 1.4",
+      build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
       docs: docs()

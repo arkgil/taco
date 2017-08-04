@@ -3,6 +3,7 @@
 Composition and error handling of sequential computations, similar to
 `Ecto.Multi`
 
+[![CircleCI](https://circleci.com/gh/arkgil/taco.svg?style=svg)](https://circleci.com/gh/arkgil/taco)
 [![Ebert](https://ebertapp.io/github/arkgil/taco.svg)](https://ebertapp.io/github/arkgil/taco)
 
 Taco allows to create a chain of actions which might either succeed,
