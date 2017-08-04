@@ -5,9 +5,12 @@ defmodule Taco.Mixfile do
     [
       app: :taco,
       version: "0.1.0",
+      name: "Taco",
+      description: "Composition and error handling of sequential computations",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: docs()
     ]
   end
 
@@ -19,6 +22,14 @@ defmodule Taco.Mixfile do
 
   defp deps do
     [
+      {:ex_doc, "~> 0.16", only: :dev, runtime: false}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "Taco",
+      extras: ["README.md": [title: "Taco"]]
     ]
   end
 end
