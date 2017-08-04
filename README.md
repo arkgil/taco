@@ -3,6 +3,8 @@
 Composition and error handling of sequential computations, similar to
 `Ecto.Multi`
 
+[![Ebert](https://ebertapp.io/github/arkgil/taco.svg)](https://ebertapp.io/github/arkgil/taco)
+
 Taco allows to create a chain of actions which might either succeed,
 fail, or halt the execution of further actions in the pipeline.
 
