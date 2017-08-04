@@ -7,11 +7,13 @@ defmodule Taco.Mixfile do
       version: "0.1.0",
       name: "Taco",
       description: "Composition and error handling of sequential computations",
+      source_url: "https://github.com/arkgil/taco",
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
-      docs: docs()
+      docs: docs(),
+      package: package()
     ]
   end
 
@@ -33,6 +35,14 @@ defmodule Taco.Mixfile do
     [
       main: "Taco",
       extras: ["README.md": [title: "Taco"]]
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      maintainers: ["Arkadiusz Gil"],
+      links: %{"GitHub" => "https://github.com/arkgil/taco"}
     ]
   end
 end
