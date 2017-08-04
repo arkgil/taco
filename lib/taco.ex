@@ -54,7 +54,6 @@ defmodule Taco do
       ...> |> Taco.run()
       {:ok, :multiply, 10}
 
-
   Halting pipeline
 
       iex> number = 2
